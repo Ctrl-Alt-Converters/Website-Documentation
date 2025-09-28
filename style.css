@@ -1,0 +1,194 @@
+/* Basic Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header & Footer */
+.main-header {
+    background: #002244;
+    color: #fff;
+    padding: 3rem 0 0; /* Adjusted padding to make space for the nav */
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+}
+
+.main-header h2 {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Navigation Bar */
+.main-nav {
+    background: #003366; /* A slightly lighter color for contrast */
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ffc107; /* A bright color for hover effect */
+}
+
+
+/* Sections */
+.section-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.section-container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+/* Team Section */
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 45%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Navigation Bar - Dropdown Rules */
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.main-nav .dropdown {
+    position: relative;
+}
+
+.main-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #003366;
+    min-width: 200px;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+}
+
+.main-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.main-nav .dropdown-menu li {
+    padding: 0;
+}
+
+.main-nav .dropdown-menu a {
+    text-transform: none;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-nav .dropdown-menu a:hover {
+    background-color: #004d99;
+}
+
+/* General Content */
+.section-content {
+    text-align: left;
+}
+
+.tech-stack {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 5px solid #005f9c;
+}
+
+.tech-stack li {
+    margin-bottom: 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+
+    .main-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
