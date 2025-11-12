@@ -26,7 +26,7 @@ ul {
 .main-header {
     background: #002244;
     color: #fff;
-    padding: 3rem 0 0; /* Adjusted padding to make space for the nav */
+    padding: 0 0 0; /* Adjusted padding to make space for the nav */
     text-align: center;
 }
 
@@ -191,4 +191,40 @@ hr {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Main container for the header content */
+.header-content {
+    display: flex;             /* Enable Flexbox */
+    flex-direction: column;    /* Stack items vertically (logo then text) */
+    align-items: center;       /* Horizontally center items within this container */
+}
+
+/* Container for the logo (useful if you ever want to add background or specific styling to just the logo area) */
+.header-logo-container {
+    /* No specific styles needed here for simple centering */
+}
+
+/* Styles for the logo image itself */
+.header-logo {
+    height: 200px; /* Adjust the logo size as needed */
+    width: auto;  /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves as a block element for consistent centering */
+}
+
+/* Styles for the text block */
+.header-text {
+    text-align: center; /* Ensures the H1 and H2 text are centered relative to each other */
+}
+
+/* Removes default margins from h1/h2 that can cause misalignment */
+.header-text h1,
+.header-text h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: Adjust line-height if needed */
+.header-text h1 {
+    line-height: 1.1;
 }
