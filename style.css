@@ -200,11 +200,6 @@ hr {
     align-items: center;       /* Horizontally center items within this container */
 }
 
-/* Container for the logo (useful if you ever want to add background or specific styling to just the logo area) */
-.header-logo-container {
-    /* No specific styles needed here for simple centering */
-}
-
 /* Styles for the logo image itself */
 .header-logo {
     height: 200px; /* Adjust the logo size as needed */
